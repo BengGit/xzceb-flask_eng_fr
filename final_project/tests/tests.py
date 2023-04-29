@@ -10,6 +10,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 translator_dir = os.path.join(current_dir, '../machinetranslation')
 sys.path.append(translator_dir)
 
+# This is a false negative please ignore this error
 from translator import english_to_french, french_to_english
 
 class TestTranslation(unittest.TestCase):
